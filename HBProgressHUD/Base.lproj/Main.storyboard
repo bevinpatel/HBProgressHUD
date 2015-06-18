@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="HUDController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp7-5l-Q5y">
+                                <rect key="frame" x="250" y="70" width="100" height="35"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KhI-Vx-z5f"/>
+                                    <constraint firstAttribute="height" constant="35" id="gSv-bF-EBI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <color key="tintColor" white="0.84999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Start HUD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startProgress:" destination="9pv-A4-QxB" eventType="touchUpInside" id="gLg-qL-aLt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zp7-5l-Q5y" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="50" id="KH0-UM-0Mp"/>
+                            <constraint firstAttribute="centerX" secondItem="Zp7-5l-Q5y" secondAttribute="centerX" id="Yto-Dw-JIF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="HUDViewDemoController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5J-Vm-vDf">
+                                <rect key="frame" x="250" y="5" width="100" height="35"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AJj-H8-no8"/>
+                                    <constraint firstAttribute="height" constant="35" id="CS6-mL-bKd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Start HUD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startProgress:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3Uu-hv-owF"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhs-Cp-hyc">
+                                <rect key="frame" x="0.0" y="45" width="600" height="506"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FS-lP-5r8">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DT-gL-Nlb" customClass="BKProgressHUD">
+                                                <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4DT-gL-Nlb" secondAttribute="height" multiplier="1:1" id="Zx1-ZW-zLs"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="redious">
+                                                        <integer key="value" value="64"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.83921575546264648" green="0.28235295414924622" blue="0.18431372940540314" alpha="1" colorSpace="deviceRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="hudImage" value="googlePlus"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhK-HG-dv2" customClass="BKProgressHUD">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="VhK-HG-dv2" secondAttribute="height" multiplier="1:1" id="38T-B7-CuA"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="redious">
+                                                        <integer key="value" value="64"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="hudImage" value="facebook"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ye6-iw-Y51" customClass="BKProgressHUD">
+                                                <rect key="frame" x="0.0" y="300" width="300" height="300"/>
+                                                <color key="backgroundColor" red="0.054901964962482452" green="0.4745098352432251" blue="0.70980393886566162" alpha="1" colorSpace="deviceRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ye6-iw-Y51" secondAttribute="height" multiplier="1:1" id="Ah9-17-zeg"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="redious">
+                                                        <integer key="value" value="64"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="hudImage" value="linkedin"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1C9-Bm-QRp" customClass="BKProgressHUD">
+                                                <rect key="frame" x="300" y="300" width="300" height="300"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1C9-Bm-QRp" secondAttribute="height" multiplier="1:1" id="xiy-Ly-ynk"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="redious">
+                                                        <integer key="value" value="64"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.16470588743686676" green="0.64705884456634521" blue="0.85882359743118286" alpha="1" colorSpace="deviceRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="hudImage" value="twitte"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoE-LR-C8e" customClass="BKProgressHUD">
+                                                <rect key="frame" x="0.0" y="600" width="300" height="300"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XoE-LR-C8e" secondAttribute="height" multiplier="1:1" id="d9a-99-nDg"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="redious">
+                                                        <integer key="value" value="64"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.53333336114883423" green="0.64705884456634521" blue="0.18431372940540314" alpha="1" colorSpace="deviceRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="hudImage" value="android"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2W-Zm-4x7" customClass="BKProgressHUD">
+                                                <rect key="frame" x="300" y="600" width="300" height="300"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="t2W-Zm-4x7" secondAttribute="height" multiplier="1:1" id="CwW-ej-jB2"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="redious">
+                                                        <integer key="value" value="64"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                        <color key="value" red="0.79627408951316803" green="0.79350596100969351" blue="0.8080357142857143" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.12156863510608673" green="0.10196079313755035" blue="0.090196080505847931" alpha="1" colorSpace="deviceRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="hudImage" value="blackberry"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5j-yx-bZj" customClass="BKProgressHUD">
+                                                <rect key="frame" x="0.0" y="900" width="300" height="300"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="l5j-yx-bZj" secondAttribute="height" multiplier="1:1" id="YtS-Ap-TuB"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="redious">
+                                                        <integer key="value" value="64"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                        <color key="value" red="0.83227040816326525" green="0.83227040816326525" blue="0.83227040816326525" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.57254904508590698" green="0.57254904508590698" blue="0.57254904508590698" alpha="1" colorSpace="deviceRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3F-L7-wxn" customClass="BKProgressHUD">
+                                                <rect key="frame" x="300" y="900" width="300" height="300"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="n3F-L7-wxn" secondAttribute="height" multiplier="1:1" id="Ln8-rH-W4G"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="redious">
+                                                        <integer key="value" value="64"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.16470588743686676" green="0.72549021244049072" blue="0.94509810209274292" alpha="1" colorSpace="deviceRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="hudImage" value="windows"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="VhK-HG-dv2" firstAttribute="top" secondItem="9FS-lP-5r8" secondAttribute="top" id="06D-Er-AjX"/>
+                                            <constraint firstItem="VhK-HG-dv2" firstAttribute="leading" secondItem="9FS-lP-5r8" secondAttribute="leading" id="1Ls-HT-QGl"/>
+                                            <constraint firstItem="XoE-LR-C8e" firstAttribute="leading" secondItem="9FS-lP-5r8" secondAttribute="leading" id="36z-DY-wAT"/>
+                                            <constraint firstAttribute="trailing" secondItem="n3F-L7-wxn" secondAttribute="trailing" id="AoA-7s-Ir5"/>
+                                            <constraint firstItem="l5j-yx-bZj" firstAttribute="leading" secondItem="9FS-lP-5r8" secondAttribute="leading" id="GHH-xc-WNN"/>
+                                            <constraint firstAttribute="trailing" secondItem="t2W-Zm-4x7" secondAttribute="trailing" id="H1K-P1-68g"/>
+                                            <constraint firstItem="t2W-Zm-4x7" firstAttribute="leading" secondItem="XoE-LR-C8e" secondAttribute="trailing" id="Kc7-Ar-45P"/>
+                                            <constraint firstItem="4DT-gL-Nlb" firstAttribute="top" secondItem="9FS-lP-5r8" secondAttribute="top" id="Lvo-Uc-sdz"/>
+                                            <constraint firstItem="t2W-Zm-4x7" firstAttribute="width" secondItem="XoE-LR-C8e" secondAttribute="width" id="Nr1-cC-qUf"/>
+                                            <constraint firstItem="4DT-gL-Nlb" firstAttribute="leading" secondItem="VhK-HG-dv2" secondAttribute="trailing" id="Ra3-VC-TDt"/>
+                                            <constraint firstItem="Ye6-iw-Y51" firstAttribute="leading" secondItem="9FS-lP-5r8" secondAttribute="leading" id="STL-tp-X1U"/>
+                                            <constraint firstAttribute="trailing" secondItem="4DT-gL-Nlb" secondAttribute="trailing" id="SWb-BR-XKn"/>
+                                            <constraint firstItem="1C9-Bm-QRp" firstAttribute="leading" secondItem="Ye6-iw-Y51" secondAttribute="trailing" id="TIa-dN-R5U"/>
+                                            <constraint firstItem="Ye6-iw-Y51" firstAttribute="top" secondItem="VhK-HG-dv2" secondAttribute="bottom" id="ZS3-y9-fCn"/>
+                                            <constraint firstItem="4DT-gL-Nlb" firstAttribute="width" secondItem="VhK-HG-dv2" secondAttribute="width" id="ZVI-YY-It1"/>
+                                            <constraint firstItem="n3F-L7-wxn" firstAttribute="leading" secondItem="l5j-yx-bZj" secondAttribute="trailing" id="bHR-nA-QRN"/>
+                                            <constraint firstItem="XoE-LR-C8e" firstAttribute="top" secondItem="Ye6-iw-Y51" secondAttribute="bottom" id="c06-yR-PLR"/>
+                                            <constraint firstItem="l5j-yx-bZj" firstAttribute="width" secondItem="n3F-L7-wxn" secondAttribute="width" id="c69-nH-5WC"/>
+                                            <constraint firstItem="l5j-yx-bZj" firstAttribute="top" secondItem="XoE-LR-C8e" secondAttribute="bottom" id="cUr-6r-R5d"/>
+                                            <constraint firstItem="n3F-L7-wxn" firstAttribute="top" secondItem="t2W-Zm-4x7" secondAttribute="bottom" id="kDG-8h-DCc"/>
+                                            <constraint firstAttribute="trailing" secondItem="1C9-Bm-QRp" secondAttribute="trailing" id="kpg-pD-3MY"/>
+                                            <constraint firstItem="1C9-Bm-QRp" firstAttribute="top" secondItem="4DT-gL-Nlb" secondAttribute="bottom" id="p9O-bS-ZiH"/>
+                                            <constraint firstItem="Ye6-iw-Y51" firstAttribute="width" secondItem="1C9-Bm-QRp" secondAttribute="width" id="pNb-bw-HpX"/>
+                                            <constraint firstItem="t2W-Zm-4x7" firstAttribute="top" secondItem="1C9-Bm-QRp" secondAttribute="bottom" id="quK-9V-F86"/>
+                                            <constraint firstAttribute="bottom" secondItem="l5j-yx-bZj" secondAttribute="bottom" id="zak-Bx-miq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9FS-lP-5r8" secondAttribute="bottom" id="0G0-gD-rb4"/>
+                                    <constraint firstItem="9FS-lP-5r8" firstAttribute="leading" secondItem="qhs-Cp-hyc" secondAttribute="leading" id="Er4-H7-JIJ"/>
+                                    <constraint firstItem="9FS-lP-5r8" firstAttribute="top" secondItem="qhs-Cp-hyc" secondAttribute="top" id="ne8-rO-gg8"/>
+                                    <constraint firstAttribute="trailing" secondItem="9FS-lP-5r8" secondAttribute="trailing" id="sdY-sc-EVK"/>
+                                    <constraint firstAttribute="width" secondItem="9FS-lP-5r8" secondAttribute="width" id="xdG-Lk-Z1b"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qhs-Cp-hyc" secondAttribute="trailing" id="8He-CI-4C2"/>
+                            <constraint firstItem="qhs-Cp-hyc" firstAttribute="top" secondItem="f5J-Vm-vDf" secondAttribute="bottom" constant="5" id="B1i-rW-ri7"/>
+                            <constraint firstAttribute="centerX" secondItem="f5J-Vm-vDf" secondAttribute="centerX" id="I2N-v6-ck6"/>
+                            <constraint firstItem="f5J-Vm-vDf" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="5" id="NVo-S7-q7Q"/>
+                            <constraint firstItem="qhs-Cp-hyc" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="lI5-cj-HGU"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="qhs-Cp-hyc" secondAttribute="bottom" id="mOw-7K-IbG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="androidHUD" destination="XoE-LR-C8e" id="Rvx-T0-fmr"/>
+                        <outlet property="appleHudHUD" destination="l5j-yx-bZj" id="Osu-Ic-Fsx"/>
+                        <outlet property="blackBerryHUD" destination="t2W-Zm-4x7" id="ynq-a3-WOj"/>
+                        <outlet property="fbHUD" destination="VhK-HG-dv2" id="mxd-6t-GoA"/>
+                        <outlet property="gPlusHUD" destination="4DT-gL-Nlb" id="jv3-gV-TRl"/>
+                        <outlet property="linkInHUD" destination="Ye6-iw-Y51" id="7yk-nJ-a7K"/>
+                        <outlet property="tweeterHUD" destination="1C9-Bm-QRp" id="SkU-sI-Bvd"/>
+                        <outlet property="windowsHUD" destination="n3F-L7-wxn" id="ksm-UI-fVb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="android" width="171" height="171"/>
+        <image name="blackberry" width="171" height="171"/>
+        <image name="facebook" width="171" height="171"/>
+        <image name="first" width="30" height="30"/>
+        <image name="googlePlus" width="171" height="171"/>
+        <image name="linkedin" width="171" height="171"/>
+        <image name="second" width="30" height="30"/>
+        <image name="twitte" width="171" height="171"/>
+        <image name="windows" width="171" height="171"/>
+    </resources>
+</document>
