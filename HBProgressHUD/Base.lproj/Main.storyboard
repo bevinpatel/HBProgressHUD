@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
@@ -89,7 +90,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="redious">
-                                                        <integer key="value" value="64"/>
+                                                        <integer key="value" value="44"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                         <real key="value" value="13"/>
@@ -111,7 +112,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="redious">
-                                                        <integer key="value" value="64"/>
+                                                        <integer key="value" value="44"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                         <real key="value" value="13"/>
@@ -127,13 +128,13 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ye6-iw-Y51" customClass="BKProgressHUD">
                                                 <rect key="frame" x="0.0" y="300" width="300" height="300"/>
-                                                <color key="backgroundColor" red="0.054901964962482452" green="0.4745098352432251" blue="0.70980393886566162" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ye6-iw-Y51" secondAttribute="height" multiplier="1:1" id="Ah9-17-zeg"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="redious">
-                                                        <integer key="value" value="64"/>
+                                                        <integer key="value" value="44"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                         <real key="value" value="13"/>
@@ -142,7 +143,7 @@
                                                         <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="value" red="0.090196080505847931" green="0.38431376218795776" blue="0.65098041296005249" alpha="1" colorSpace="deviceRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="hudImage" value="linkedin"/>
                                                 </userDefinedRuntimeAttributes>
@@ -155,7 +156,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="redious">
-                                                        <integer key="value" value="64"/>
+                                                        <integer key="value" value="44"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                         <real key="value" value="13"/>
@@ -177,7 +178,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="redious">
-                                                        <integer key="value" value="64"/>
+                                                        <integer key="value" value="44"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                         <real key="value" value="13"/>
@@ -199,13 +200,13 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="redious">
-                                                        <integer key="value" value="64"/>
+                                                        <integer key="value" value="44"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                         <real key="value" value="13"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                                        <color key="value" red="0.79627408951316803" green="0.79350596100969351" blue="0.8080357142857143" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                                                         <color key="value" red="0.12156863510608673" green="0.10196079313755035" blue="0.090196080505847931" alpha="1" colorSpace="deviceRGB"/>
@@ -221,13 +222,13 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="redious">
-                                                        <integer key="value" value="64"/>
+                                                        <integer key="value" value="44"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                         <real key="value" value="13"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                                        <color key="value" red="0.83227040816326525" green="0.83227040816326525" blue="0.83227040816326525" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                                                         <color key="value" red="0.57254904508590698" green="0.57254904508590698" blue="0.57254904508590698" alpha="1" colorSpace="deviceRGB"/>
@@ -242,7 +243,7 @@
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="redious">
-                                                        <integer key="value" value="64"/>
+                                                        <integer key="value" value="44"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                                         <real key="value" value="13"/>

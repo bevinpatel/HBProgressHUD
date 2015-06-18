@@ -51,6 +51,7 @@ IB_DESIGNABLE
         [self setClipsToBounds:YES];
         [self setupConstraints];
     }
+    [super layoutSubviews];
 }
 - (void)drawRect:(CGRect)rect
 {
